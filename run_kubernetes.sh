@@ -5,11 +5,11 @@
 # Step 1:
 # This is your Docker ID/path
 # dockerpath=<>
-dockerpath=aasthajain1399/devopsprojectimg
+dockerpath=Aastha1399/devopsprojectimg
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run devopsprojectimg --image=aasthajain1399/devopsprojectimg --port=80
+kubectl run devopsprojectimg --image=Aastha1399/devopsprojectimg --port=80
 
 # Step 3:
 # List kubernetes pods
