@@ -1,4 +1,4 @@
-
+[![CircleCI](https://circleci.com/gh/Aastha1399/devopsproject04.svg?style=svg&circle-token=27b7b5eba34d83726579256642764533bd0229f6)](https://app.circleci.com/pipelines/github/Aastha1399)
 
 
 # Cloud DevOps, Scaling Microservices
