@@ -33,7 +33,6 @@ Run 'make install' to install the necessary dependencies and set the environment
 - Dockerfile: Dockerfile to build the image
 - make_prediction.sh: Sending a request to the Python flask app to get a prediction, for localhost
 - Makefile:  instructions on environment setup and lint tests
-- Make_prediction2.sh: Sending a request to the Python flask app to get a prediction, for minikube kubernetes
 - run_docker.sh:  get Docker running, locally
 - run_kubernetes.sh:  run app in kubernetes
 - upload_docker.sh:  upload image to docker
@@ -54,7 +53,7 @@ minikube start
 
 3.  making a prediction using a separate terminal tab and run 
 
-./make_prediction2.sh
+./make_prediction.sh
 
 
 4. Delete the cluster
