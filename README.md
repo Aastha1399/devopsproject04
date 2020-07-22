@@ -1,6 +1,4 @@
 
-[![CircleCI](https://circleci.com/gh/Aastha1399/Operationalize-a-Machine-Learning-Microservice-API.svg?style=svg)](https://circleci.com/gh/Aastha1399/Operationalize-a-Machine-Learning-Microservice-API)
-
 
 
 # Cloud DevOps, Scaling Microservices
