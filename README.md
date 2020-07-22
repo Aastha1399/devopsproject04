@@ -1,59 +1,62 @@
 [![CircleCI](https://circleci.com/gh/Aastha1399/devopsproject04.svg?style=svg&circle-token=27b7b5eba34d83726579256642764533bd0229f6)](https://app.circleci.com/pipelines/github/Aastha1399)
 
+### Operationalize a Machine Learning Microservice API
 
-# Cloud DevOps, Scaling Microservices
+In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API.
 
-The project's goal is to operationalize a machine learning microservice using kubernetes. The service serves out predictions (inference) about housing prices through API calls. The model has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on.
+You are given a pre-trained, sklearn model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on.
 
+Running app.py
+Standalone:
+app.py contains the web app built using flask framework.
 
-### Install
+python app.py
 
-- Docker
-- Virtualbox
+Run in Docker:
+run_docker.sh contains the script to run the app in the docker.
 
-For Mac:
+./run_docker.sh
 
-```
-brew cask install virtualbox
-```
+Run in Kubernetes:
+run_kubernetes.sh contains the script to run app in the Kubernetes.
 
-- Minikube
+./run_kubernetes.sh
 
-```
-brew cask install minikube
-```
+###Setup the Environment
+
+Run 'make install' to install the necessary dependencies and set the environment
+
 
 ### Files explanation
 - config.yml: CircleCI configuration file for running the tests
-- app.py: Python flask app that serves out predictions (inference) about housing prices through API calls
-- Dockerfile: Dockerfile for building the image
-- make_prediction.sh: Send a request to the Python flask app to get a prediction, for localhost
-- make_prediction2.sh: Send a request to the Python flask app to get a prediction, for minikube kubernetes
-- Makefile: includes instructions on environment setup and lint tests
-- run_docker.sh: file to be able to get Docker running, locally
-- run_kubernetes.sh: file to run the app in kubernetes
-- upload_docker.sh: file to upload the image to docker
+- app.py: Python flask app that serves  predictions  about housing prices through API calls
+- Dockerfile: Dockerfile to build the image
+- make_prediction.sh: Sending a request to the Python flask app to get a prediction, for localhost
+- Makefile:  instructions on environment setup and lint tests
+- Make_prediction2.sh: Sending a request to the Python flask app to get a prediction, for minikube kubernetes
+- run_docker.sh:  get Docker running, locally
+- run_kubernetes.sh:  run app in kubernetes
+- upload_docker.sh:  upload image to docker
 
 
-### Run the project
+### Execute
 
 
 1. You should have a virtual machine like VirtualBox and minikube installed, as per the project environmet instructions. To start a local cluster, type the terminal command: 
-```
+
 minikube start
-```
 
-2. To deploy this application in kubernetes run:
-```
+
+2. To deploy in kubernetes run:
+
 ./run_kubernetes.sh
-```
 
-3. After you’ve called run_kubernetes.sh, and a pod is up and running, make a prediction using a separate terminal tab and run 
-```
+
+3.  making a prediction using a separate terminal tab and run 
+
 ./make_prediction2.sh
-```
+
 
 4. Delete the cluster
-```
+
 minikube delete
-```
