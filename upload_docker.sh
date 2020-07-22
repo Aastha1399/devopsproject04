@@ -11,9 +11,9 @@ dockerpath=devopsprojectimg
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login --username aasthajain1399
-docker tag devopsprojectimg aasthajain1399/devopsprojectimg
+docker login --username Aastha1399
+docker tag devopsprojectimg Aastha1399/devopsprojectimg
 
 # Step 3:
 # Push image to a docker repository
-docker push aasthajain1399/devopsprojectimg
+docker push Aastha1399/devopsprojectimg
